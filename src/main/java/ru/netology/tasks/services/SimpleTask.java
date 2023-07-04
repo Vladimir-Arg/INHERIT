@@ -7,9 +7,12 @@ public class SimpleTask extends Task {
         super(id); // вызов родительского конструктора
         this.title = title; // заполнение своих полей
     }
+
     public String getTitle() {
         return title;
-    }    @Override
+    }
+
+    @Override
     public boolean matches(String query) {
         if (title.contains(query)) {
             return true;

@@ -1,4 +1,5 @@
 package ru.netology.tasks.services;
+
 public class Epic extends Task {
     protected String[] subtasks = new String[0];
 
@@ -6,6 +7,7 @@ public class Epic extends Task {
         super(id);
         this.subtasks = subtasks;
     }
+
     @Override
     public boolean matches(String query) {
         for (int i = 0; i < subtasks.length; i++) { // перебираем каждый элемент в массиве

@@ -1,4 +1,5 @@
 package ru.netology.tasks.services;
+
 import java.util.Objects;
 
 public class Task {
@@ -7,6 +8,7 @@ public class Task {
     public Task(int id) {
         this.id = id;
     }
+
     public int getId() {
         return id;
     }
@@ -20,6 +22,7 @@ public class Task {
         Task task = (Task) o;
         return id == task.id;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(id);
@@ -28,6 +31,7 @@ public class Task {
     /**
      * Метод, проверяющий подходит ли эта задача поисковому запросу.
      * Эта логика должна быть определена в наследниках, у каждого она будет своя
+     *
      * @param query Поисковый запрос
      * @return Ответ на вопрос, подходит ли эта задача под поисковый запрос
      */
